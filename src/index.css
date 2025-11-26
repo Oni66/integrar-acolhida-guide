@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 206 47% 39%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 206 47% 39%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 206 47% 39%;
+
+    --primary: 131 58% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 131 68% 35%;
+
+    --secondary: 206 47% 39%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 206 57% 49%;
+
+    --accent-yellow: 57 84% 60%;
+    --accent-yellow-foreground: 131 58% 25%;
+
+    --muted: 131 20% 95%;
+    --muted-foreground: 131 30% 40%;
+
+    --accent: 206 47% 39%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 131 30% 85%;
+    --input: 131 30% 85%;
+    --ring: 131 58% 25%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(131 58% 25%), hsl(131 68% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(206 47% 39%), hsl(206 57% 49%));
+    --gradient-hero: linear-gradient(135deg, hsl(131 58% 25%), hsl(206 47% 39%));
+    --shadow-elegant: 0 10px 30px -10px hsl(131 58% 25% / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(131 40% 20% / 0.15);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 131 30% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 131 25% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 131 25% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 131 70% 40%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 131 80% 50%;
+
+    --secondary: 206 75% 50%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-glow: 206 85% 60%;
+
+    --accent-yellow: 57 84% 60%;
+    --accent-yellow-foreground: 131 30% 8%;
+
+    --muted: 131 20% 20%;
+    --muted-foreground: 131 20% 70%;
+
+    --accent: 206 75% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 131 20% 25%;
+    --input: 131 20% 25%;
+    --ring: 131 70% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+}
